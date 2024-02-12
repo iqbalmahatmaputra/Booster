@@ -1,7 +1,7 @@
 /* Media query untuk smartphone (lebar maksimum 768px) */
 @media screen and (max-width: 768px) {
     /* Gaya CSS untuk smartphone */
-    section{
+    section:not(#feature){
         min-height: 900px;
     }
     .img-bg{
@@ -36,11 +36,25 @@
     font-size: 16   px;
     font-weight:500;
     }
+    .card-title{
+        color:#ffffff;
+        font-weight:700;
+        font-size:10px;
+        /* line-height: 22px; */
+    }
+    .card-subtitle{
+        color:#000000; 
+        font-weight:500;
+        font-size:8px;
+    }
   }
   
   /* Media query untuk laptop (lebar antara 769px dan 1024px) */
   @media screen and (min-width: 769px) {
     /* Gaya CSS untuk laptop */
+    section{
+        min-height: 900px;
+    }
     #feature{
         background-image: url('assets/background/bg-linear.svg');
         background-size: cover;
@@ -150,4 +164,42 @@ section{
     color:#000000;
     font-weight:500;
     font-size:14px;
+}
+
+.outcome-container {
+    position: relative;
+    background-size: 400px 188px; /* Atur agar gambar mengisi container */
+    background-position: center center; /* Atur agar gambar terpusat di dalam container */  background-repeat: no-repeat;
+    min-height: 200px; /* Atur tinggi minimum container */
+}
+
+.text-front {
+    position: absolute;
+    top: 50%; /* Atur agar teks berada di tengah secara vertikal */
+    left: 50%; /* Atur agar teks berada di tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Atur agar teks tepat berada di tengah */
+    z-index: 1; /* Letakkan teks di depan gambar */
+    color: #000000; /* Atur warna teks sesuai kebutuhan */
+    padding: 20px; /* Atur padding untuk teks */
+    font-size: 12px;
+}
+
+.text-left {
+    position: absolute;
+    top: 50%;
+    left: 150px; /* Atur jarak kiri sesuai kebutuhan */
+    transform: translate(0, -50%);
+    z-index: 1;
+    color: #000000;
+    textalign: left;
+}
+
+.text-right {
+    position: absolute;
+    top: 50%;
+    right: 130px; /* Atur jarak kanan sesuai kebutuhan */
+    transform: translate(0, -50%);
+    z-index: 1;
+    color: #000000;
+    text-align: right;
 }

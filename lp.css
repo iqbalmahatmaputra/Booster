@@ -168,7 +168,7 @@ section{
 
 .outcome-container {
     position: relative;
-    background-size: 400px 188px; /* Atur agar gambar mengisi container */
+    background-size: 600px 188px; /* Atur agar gambar mengisi container */
     background-position: center center; /* Atur agar gambar terpusat di dalam container */  background-repeat: no-repeat;
     min-height: 200px; /* Atur tinggi minimum container */
 }
@@ -187,7 +187,7 @@ section{
 .text-left {
     position: absolute;
     top: 50%;
-    left: 150px; /* Atur jarak kiri sesuai kebutuhan */
+    left: 170px; /* Atur jarak kiri sesuai kebutuhan */
     transform: translate(0, -50%);
     z-index: 1;
     color: #000000;
@@ -197,7 +197,7 @@ section{
 .text-right {
     position: absolute;
     top: 50%;
-    right: 130px; /* Atur jarak kanan sesuai kebutuhan */
+    right: 160px; /* Atur jarak kanan sesuai kebutuhan */
     transform: translate(0, -50%);
     z-index: 1;
     color: #000000;

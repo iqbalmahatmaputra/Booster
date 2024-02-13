@@ -99,14 +99,14 @@
         top: 50%;
         left: 170px; /* Atur jarak kiri sesuai kebutuhan */
         transform: translate(0, -50%);
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .text-right {
         top: 50%;
-        right: 160px; /* Atur jarak kanan sesuai kebutuhan */
+        right: 170px; /* Atur jarak kanan sesuai kebutuhan */
         transform: translate(0, -50%);
-        font-size: 12px;
+        font-size: 11px;
     }
     .outcome-container {
         background-size: 600px 188px; /* Atur agar gambar mengisi container */
@@ -120,14 +120,14 @@
         top: 50%;
         left: 170px; /* Atur jarak kiri sesuai kebutuhan */
         transform: translate(0, -50%);
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .text-right {
         top: 50%;
-        right: 160px; /* Atur jarak kanan sesuai kebutuhan */
+        right: 170px; /* Atur jarak kanan sesuai kebutuhan */
         transform: translate(0, -50%);
-        font-size: 12px;
+        font-size: 11px;
     }
     .outcome-container {
         background-size: 600px 188px; /* Atur agar gambar mengisi container */
@@ -270,4 +270,15 @@ section{
     z-index: 1;
     color: #000000;
     text-align: right;
+}
+
+#footer{
+    background-color: rgba(37, 42, 96, 0.7);
+}
+.text-footer{
+    color: #ffffff;
+}
+
+.text-footer p{
+    opacity: 0.5;
 }

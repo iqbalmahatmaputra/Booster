@@ -134,10 +134,18 @@
     }
   }
 html{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif ;
+    scroll-behavior: smooth;
 }
 section{
     height:100%;
+}
+.navbar-nav .nav-link {
+    color: black; /* Warna teks default */
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: #2E90FA; /* Warna teks saat dihover */
 }
 #home{
     background-image: url('assets/background/1.png');

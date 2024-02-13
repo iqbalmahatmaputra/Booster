@@ -28,7 +28,7 @@
         background-position: center;
     }
     #benefit{
-        background-image: url('assets/background/bg-benefit-hp.png');
+        background-image: url('assets/background/bg-benefit-hp.png') !important;
         background-size: cover;
         background-position: center center;
     }

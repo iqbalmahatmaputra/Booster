@@ -47,10 +47,26 @@
         font-weight:500;
         font-size:8px;
     }
+    .text-left {
+        top: 50%;
+        left: 12%; /* Atur jarak kiri sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 11px;
+    }
+    
+    .text-right {
+        top: 50%;
+        right: 12%; /* Atur jarak kanan sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 11px;
+    }
+    .outcome-container {
+        background-size: 400px 188px; /* Atur agar gambar mengisi container */
+    }
   }
   
   /* Media query untuk laptop (lebar antara 769px dan 1024px) */
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 769px) and (max-width:1024px){
     /* Gaya CSS untuk laptop */
     section{
         min-height: 900px;
@@ -76,24 +92,84 @@
         object-fit: cover;
         height: 450px;
     }
-
+    .text-left {
+        top: 50%;
+        left: 170px; /* Atur jarak kiri sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 12px;
+    }
+    
+    .text-right {
+        top: 50%;
+        right: 160px; /* Atur jarak kanan sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 12px;
+    }
+    .outcome-container {
+        background-size: 600px 188px; /* Atur agar gambar mengisi container */
+    }
   }
   
   /* Media query untuk komputer desktop (lebar minimum 1025px) */
   @media screen and (min-width: 1025px) {
     /* Gaya CSS untuk komputer desktop */
-
+    .text-left {
+        top: 50%;
+        left: 170px; /* Atur jarak kiri sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 12px;
+    }
+    
+    .text-right {
+        top: 50%;
+        right: 160px; /* Atur jarak kanan sesuai kebutuhan */
+        transform: translate(0, -50%);
+        font-size: 12px;
+    }
+    .outcome-container {
+        background-size: 600px 188px; /* Atur agar gambar mengisi container */
+    }
   }
 html{
     font-family: 'Montserrat', sans-serif;
 }
 section{
-    height:100vh;
+    height:100%;
 }
 #home{
     background-image: url('assets/background/1.png');
     background-size: cover;
     background-position: center;
+}
+#outcome{
+    background-image: url('assets/background/bg-outcome.svg');
+    background-size: cover;
+    background-position: center;
+}
+#feature{
+    background-image: url('assets/background/bg-linear.svg');
+    background-size: cover;
+    background-position: center;
+}
+#benefit{
+    background-image: url('assets/background/bg-benefit.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.feature-title{
+    font-weight:700;
+    font-size:35px;
+}
+.feature-sub-title{
+    font-size:24px;
+}
+.img-item{
+    object-fit: cover;
+    height: 450px;
 }
 
 .sub-judul{
@@ -140,12 +216,6 @@ section{
 .carousel-title{
     text-align:center;
 }
-#benefit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-}
 
 .card-bf{
     border-radius:32px;
@@ -168,10 +238,11 @@ section{
 
 .outcome-container {
     position: relative;
-    background-size: 600px 188px; /* Atur agar gambar mengisi container */
+
     background-position: center center; /* Atur agar gambar terpusat di dalam container */  background-repeat: no-repeat;
     min-height: 200px; /* Atur tinggi minimum container */
 }
+
 
 .text-front {
     position: absolute;
@@ -186,9 +257,6 @@ section{
 
 .text-left {
     position: absolute;
-    top: 50%;
-    left: 170px; /* Atur jarak kiri sesuai kebutuhan */
-    transform: translate(0, -50%);
     z-index: 1;
     color: #000000;
     textalign: left;
@@ -196,9 +264,6 @@ section{
 
 .text-right {
     position: absolute;
-    top: 50%;
-    right: 160px; /* Atur jarak kanan sesuai kebutuhan */
-    transform: translate(0, -50%);
     z-index: 1;
     color: #000000;
     text-align: right;

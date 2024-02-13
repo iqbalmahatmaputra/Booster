@@ -30,7 +30,7 @@
     #benefit{
         background-image: url('assets/background/bg-benefit-hp.png');
         background-size: cover;
-        background-position: center;
+        background-position: center center;
     }
     .feature-title{
     font-size: 16   px;
@@ -49,19 +49,22 @@
     }
     .text-left {
         top: 50%;
-        left: 12%; /* Atur jarak kiri sesuai kebutuhan */
+        left:45px; /* Atur jarak kiri sesuai kebutuhan */
         transform: translate(0, -50%);
         font-size: 11px;
     }
     
     .text-right {
         top: 50%;
-        right: 12%; /* Atur jarak kanan sesuai kebutuhan */
+        right: 40px; /* Atur jarak kanan sesuai kebutuhan */
         transform: translate(0, -50%);
         font-size: 11px;
     }
     .outcome-container {
         background-size: 400px 188px; /* Atur agar gambar mengisi container */
+    }
+    .hp-hilang{
+        display:none;
     }
   }
   
